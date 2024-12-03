@@ -134,6 +134,8 @@ typedef enum
    mousebutton_WheelDown
    } mousebutton;
 
+#ifndef __SWITCH__
+
 typedef enum
    {
    joybutton_A,
@@ -153,6 +155,29 @@ typedef enum
    joybutton_DpadRight
    } joybutton;
 
+#else
+
+typedef enum
+   {
+   joybutton_A,
+   joybutton_B,
+   joybutton_X,
+   joybutton_Y,
+   joybutton_L3,
+   joybutton_R3,
+   joybutton_LeftStick,
+   joybutton_RightStick,
+   joybutton_LeftShoulder,
+   joybutton_RightShoulder,
+   joybutton_Start,
+   joybutton_Back,
+   joybutton_DpadLeft,
+   joybutton_DpadUp,
+   joybutton_DpadRight,
+   joybutton_DpadDown
+   } joybutton;
+
+#endif
 
 //***************************************************************************
 //
